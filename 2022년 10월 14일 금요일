@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>01. HTML</title>
+    </head>
+    <body>
+        <p>'h1' 태그는 제목을 지정할 때, 굳이 지정하지 않아도, 'h1' 태그를 활용하여 제목을 설정할 수 있다. 물론, CSS를 입력해서 글자 크기와 색깔을 조정할 수 있지만,
+        지정하기가 어려울 때, 'h1' 태그를 활용하면 된다. 'h1' 태그는 숫자 6 까지 사용하여 표현할 수 있다.</p>
+        
+        <h1>제목1</h1>
+        <h2>제목2</h2>
+        <h3>제목3</h3>
+        <h4>제목4</h4>
+        <h5>제목5</h5>
+        <h6>제목6<h6>
+    </body>
+</html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>01. CSS</title>
+        <style>
+            body {background-color: blue;}
+            h1 {background-color: yellow;}
+            p {background-color: green;}
+        </style>
+    </head>
+    <body>
+        <h1>1. style 태그를 활용하여 배경색 설정하기</h1>
+        <p>배경색을 설정하기 위해서는 'style' 태그를 활용하는 것이 좋은데, 'style' 태그는 'head' 태그 앞에 놓여져야 한다는 것을 잊으면 안 된다.
+        style 태그 안에서 'background-color'를 활용하여 배경색을 지정하면 된다.</p>
+    </body>
+</html>
+
+<html lang="ko">
+  <head>
+      <meta charset="UTF-8">
+      <title>01. CSS</title>
+      <style>
+          body {background-image: url("이미지 url 주소 작성 또는 이미지 위치 작성");}    
+      </style>
+  </head>
+  <body>
+      <h1>2. bakground-image 태그를 활용하여 배경 안에 이미지 넣기</h1>
+      <p>'background-image' 태그를 활용해서 이미지 url 주소를 적거나, 이미지 위치를 작성하면 된다. 이미지 위치는 폴더 안에 위치를 작성하면 된다.</p>
+  </body>
+</html>
