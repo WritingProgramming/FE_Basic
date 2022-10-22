@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>09. HTML&CSS</title>
+        <style>
+            table, th, td {border: 2px solid black; border-collapse: collapse;}
+        </style>
+    </head>
+    <body>
+        <h1>테이블 열 합치는 방법</h1>
+            <p>테이블의 열을 합치는 방법은 합치고 싶은 부분에 'colspan="합칠 열"' 이렇게 적으면 된다. 반대로 테이블의 행을 합치고 싶으면 'rowspan="합칠 행"'을 적으면 된다.</p><br>
+            <p>테이블을 좀 더 자세히 설명하고 싶어서 캡션(Caption)을 설정하려면 'Caption'태그를 사용하면 된다.</p>
+        
+        <table style="width: 100%;">
+            <caption>연습용 테이블</caption>
+            <tr style="text-align:center">
+                <th>색깔</th>
+                <th>과일</th>
+                <th>특이사항</th>
+                <th>비고</th>
+            </tr>
+            <tr style="text-align: center;">
+                <td>노란색</td>
+                <td>사과</td>
+                <td colspan="2">없음</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>파란색</td>
+                <td>바나나</td>
+                <td colspan="2">없음</td>
+            </tr>
+        </table>
+        <table>
+            <caption>테이블의 행 합치기</caption>
+            <tr>
+                <th>커피</th>
+                <th>에이드</th>
+                <th>과자</th>
+            </tr>
+            <tr>
+                <td rowspan="2">아메리카노</td>
+                <td>청포도에이드</td>
+                <td>초코쿠키</td>
+            </tr>
+            <td>블루베리에이드</td>         <!--이미 첫번째 칸에서 rowspan을 써서 없애기 때문에 '커피' 부분은 안 적어야 한다.-->
+            <td>블루베리 쿠키</td>
+        </table>
+    </body>
+</html>

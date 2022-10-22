@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>09. HTML</title>
+        <style>
+            table, th, td {border:1px solid darkblue;}
+        </style>
+    </head>
+    <body>
+        <h1>테이블 만드는 방법</h1>
+            <p>테이블을 만들기 위해서는 'table' 태그를 사용하여 표현하면 된다. 그렇게 그룹으로 묶어준 다음, 'tr'과 'th', 'td' 태그를 만들어주면 된다. 여기서 'tr'은 테이블 안에 표를 만들어주기 위해 또 묶어 주는 것이고, 'th'는 테이블의 head를 담당하는 것으로, 그룹안에 명칭이며, 'td'는 그룹 안에 속성들을 말하는 것이다.</p><br>
+            <p>테이블의 테두리를 설정하기 위해서는 head 안에 'style' 태그를 활용하여 테두리 선과 유형을 설정할 수 있다.</p>
+            <!--한줄로 표현하고 싶으면, solid 부분에 추가적으로 border-collaps:collapse를 삽입하면 된다.-->
+
+        <table style="width:100%; text-align: center;">
+            <tr style="background-color:darkblue; color:yellow">
+                <th>이름</th>
+                <th>나이</th>
+                <th>성별</th>
+            </tr>
+            <tr>
+                <td>김지현</td>
+                <td>27살</td>
+                <td>여자</td>
+            </tr>
+            <tr>
+                <td>이희수</td>
+                <td>26살</td>
+                <td>여자</td>
+            </tr>
+            <tr>
+                <td>이제훈</td>
+                <td>30살</td>
+                <td>남자</td>
+            </tr>
+        </table>
+    </body>
+</html>
